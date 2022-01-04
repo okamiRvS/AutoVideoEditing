@@ -4,6 +4,7 @@ from matplotlib import pyplot as plt
 import IPython.display as ipd
 import librosa
 import pandas as pd
+import pdb
 
 def print_plot_play(x, Fs, text=''):
     """1. Prints information about an audio singal, 2. plots the waveform, and 3. Creates player
@@ -23,6 +24,7 @@ def print_plot_play(x, Fs, text=''):
     plt.ylabel('Amplitude')
     plt.tight_layout()
     plt.show()
+    pdb.set_trace()
     ipd.display(ipd.Audio(data=x, rate=Fs))
 
 fn_wav = "media\song\Ocean of Island.wav"
@@ -32,5 +34,3 @@ x, Fs = librosa.load(fn_wav, sr=None)
 # Read mp3
 # x, Fs = librosa.load(fn_mp3, sr=None)
 print_plot_play(x=x, Fs=Fs, text='WAV file: ')
-
-ipd.Audio(data=x, rate=Fs)
