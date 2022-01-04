@@ -6,8 +6,9 @@
 import librosa
  
 # 1. Get the file path to an included audio example
-filename = librosa.example('nutcracker')
-filename = "Ocean of Island.wav"
+#filename = librosa.example('nutcracker')
+filename = "media\song\editSong.wav"
+#filename = "media\song\Ocean of Island.wav"
  
  
 # 2. Load the audio as a waveform `y`

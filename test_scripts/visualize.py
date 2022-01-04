@@ -25,7 +25,7 @@ def print_plot_play(x, Fs, text=''):
     plt.show()
     ipd.display(ipd.Audio(data=x, rate=Fs))
 
-fn_wav = "Ocean of Island.wav"
+fn_wav = "media\song\Ocean of Island.wav"
 
 # Read wav
 x, Fs = librosa.load(fn_wav, sr=None)

@@ -43,8 +43,10 @@ def dummyfn(que, msg="foo"):
 #define stream chunk   
 chunk = 1024  
 
-#open a wav format music  
-filename = "Ocean of Island.wav"
+#open a wav format music 
+filename = "media/song/editSong.wav" 
+#filename = "media/song/Ocean of Island.wav"
+
 #f = wave.open(r"/usr/share/sounds/alsa/Rear_Center.wav","rb")  
 f = wave.open(rf"{filename}","rb")  
 
@@ -70,7 +72,8 @@ data = f.readframes(chunk)
 # bpm = round(tempo, 2)
 
 # Convert the frame indices of beat events into timestamps
-bpm = 129.20
+bpm = 99.38
+#bpm = 129.20
 bps = bpm/60
 delay_in_sec = 1/bps
 

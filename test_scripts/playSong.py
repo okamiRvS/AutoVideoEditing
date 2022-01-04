@@ -12,7 +12,7 @@ chunk = 1024
 
 #open a wav format music  
 #f = wave.open(r"/usr/share/sounds/alsa/Rear_Center.wav","rb")  
-f = wave.open(r"Ocean of Island.wav","rb")  
+f = wave.open(r"media/song/Ocean of Island.wav","rb")  
 
 #instantiate PyAudio  
 p = pyaudio.PyAudio()  
@@ -28,7 +28,6 @@ data = f.readframes(chunk)
 while data:  
     stream.write(data)  
     data = f.readframes(chunk)  
-    print("beat")
 
 #stop stream  
 stream.stop_stream()  
